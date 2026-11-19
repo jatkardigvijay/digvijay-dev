@@ -1,7 +1,7 @@
 package com.aboutme.service;
 
 import com.aboutme.model.Profile;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
 import java.io.IOException;
 import java.io.InputStream;
