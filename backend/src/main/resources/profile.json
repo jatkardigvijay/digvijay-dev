@@ -1,0 +1,33 @@
+{
+  "name": "Your Name",
+  "title": "Java Full Stack Developer",
+  "tagline": "Building reliable backends and clean React UIs.",
+  "location": "India",
+  "bio": "Replace this with a short paragraph about yourself.",
+  "contact": {
+    "email": "you@example.com",
+    "github": "https://github.com/your-handle",
+    "linkedin": "https://linkedin.com/in/your-handle"
+  },
+  "skills": [
+    { "category": "Backend", "items": ["Java", "Spring Boot", "REST", "Maven"] },
+    { "category": "Frontend", "items": ["React", "TypeScript", "Tailwind CSS"] },
+    { "category": "Tools", "items": ["Git", "Docker", "PostgreSQL"] }
+  ],
+  "experience": [
+    {
+      "company": "Company Name",
+      "role": "Software Engineer",
+      "period": "2022 - Present",
+      "highlights": ["Built X that improved Y", "Led Z"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "About Me App",
+      "description": "This portfolio: Spring Boot API + React frontend.",
+      "tech": ["Java", "Spring Boot", "React", "Tailwind"],
+      "url": "https://github.com/your-handle/about-me"
+    }
+  ]
+}
