@@ -4,8 +4,9 @@ A personal "About Me" site with a Spring Boot REST backend and a React frontend.
 
 ## Tech stack
 
-- **Backend:** Java 21, Spring Boot 3.5, Maven
-- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS 4
+- **Backend:** Java 25, Spring Boot 4.2, Maven
+- **Frontend:** React 19, TypeScript 7, Vite 8, Tailwind CSS 4
+- **Testing:** JUnit 5 and Mockito (backend), Vitest 5 and Testing Library (frontend)
 
 ## Project structure
 
@@ -23,7 +24,7 @@ cd backend
 mvn spring-boot:run
 ```
 
-Runs on http://localhost:8080. Run tests with `mvn test`.
+Requires JDK 25 and Maven. Runs on http://localhost:8080. Run tests with `mvn test`.
 
 ### Frontend
 
@@ -33,7 +34,9 @@ npm install
 npm run dev
 ```
 
-Runs on http://localhost:5173 and proxies `/api` requests to the backend.
+Requires a recent Node.js (20+) and npm. Runs on http://localhost:5173 and proxies `/api` requests to the backend.
+
+Run the tests with `npm test` (single run) or `npm run test:watch`. On Windows, run them from PowerShell or your IDE terminal rather than Git Bash, which can break Vitest because of the lowercase drive letter in its working directory.
 
 ## API
 
