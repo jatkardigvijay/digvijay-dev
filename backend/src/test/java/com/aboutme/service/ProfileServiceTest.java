@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
 import com.aboutme.model.Profile;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.json.JsonMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +16,7 @@ class ProfileServiceTest {
 
     @BeforeEach
     void setUp() throws Exception {
-        service = new ProfileService(new ObjectMapper());
+        service = new ProfileService(JsonMapper.builder().build());
         service.load();
     }
 
@@ -79,6 +79,6 @@ class ProfileServiceTest {
 
     @Test
     void profileIsNullBeforeLoad() {
-        assertNull(new ProfileService(new ObjectMapper()).getProfile());
+        assertNull(new ProfileService(JsonMapper.builder().build()).getProfile());
     }
 }
