@@ -75,7 +75,7 @@ describe("App", () => {
     render(<App />);
     await screen.findByRole("heading", { level: 1 });
 
-    expect(screen.getByRole("link", { name: /Proj/ })).toHaveAttribute("href", "https://example.com/proj");
+    expect(screen.getByRole("link", { name: /^Proj\b/ })).toHaveAttribute("href", "https://example.com/proj");
     expect(screen.getByRole("link", { name: "jane@example.com" })).toHaveAttribute(
       "href",
       "mailto:jane@example.com",
